@@ -25,8 +25,8 @@ begin
         check_equal(to_string(integer_vector'(0 => 17, 1 => - 21)), "(17, -21)");
       elsif run("Test vector with reverse range") then
         check_equal(to_string(reverse_vector), "(0, 100)");
-      elsif run("Test vector with single element") then
-        check_equal(to_string(integer_vector'(0 => 23)), "(23)");
+      elsif run("Test vector with three elements") then
+        check_equal(to_string(integer_vector'(0 => 17, 1 => - 21, 2 => 101)), "(17, -21, 101)");
       end if;
     end loop;
 
